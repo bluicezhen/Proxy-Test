@@ -52,8 +52,8 @@ def verify():
         proxy_type = "anonymous"
 
     logger.info(f"Proxy IP: { request.remote_addr.ljust(16) }"
-                f"| Type: { proxy_type.ljust(12) }"
-                f"| Client UA: { request.headers.get('user-agent') }")
+                f"Type: { proxy_type.ljust(12) }"
+                f"Client UA: { request.headers.get('user-agent') }")
 
     return proxy_type
 
